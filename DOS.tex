@@ -1,0 +1,56 @@
+\documentclass[12pt,a4paper]{jsarticle}
+\usepackage[utf8]{inputenc}
+\usepackage[ipaex]{pxchfon}
+\usepackage{url}
+\usepackage{layout}
+\usepackage{geometry}
+%\setcounter{page}{0}
+%
+\setlength{\textwidth}{\fullwidth}
+\addtolength{\textheight}{\topskip}
+\setlength\abovecaptionskip{0pt}
+\setlength\floatsep{0pt}
+\geometry{left=22mm,right=22mm,top=20mm,bottom=25mm}
+\renewcommand\baselinestretch{0.8} 
+%
+\usepackage{amsmath,amssymb}
+\usepackage{bm}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage[dvipdfmx]{hyperref}
+\usepackage{ascmac}
+\usepackage{booktabs}
+\usepackage{here}
+\usepackage{siunitx}
+\usepackage[format=hang,font=normalsize]{caption}
+\usepackage{titlesec}
+\usepackage{listings}
+\lstset{
+language={Fortran},
+showstringspaces={false},
+frame={shadowbox},frame={4pt},
+numbers={left},stepnumber={1},numberstyle={\footnotesize},numbersep={1zw},
+tabsize={4},
+breaklines={true},
+basicstyle={\normalsize},
+commentstyle={\itshape \color[rgb]{0.0,0.6,0.0}},
+keywordstyle={\bfseries \color[cmyk]{1.0,0.0,0.0,0.3}},
+stringstyle={\ttfamily \color[cmyk]{0.0,1.0,0.0,0.0}}
+}
+\usepackage{color}
+\titleformat*{\section}{\LARGE\bfseries}
+\titleformat*{\subsection}{\Large\bfseries}
+
+%
+\newcommand{\divergence}{\mathrm{div}\,}  %ダイバージェンス
+\newcommand{\grad}{\mathrm{grad}\,}  %グラディエント
+\newcommand{\rot}{\mathrm{rot}\,}  %ローテーション
+\newcommand{\todayd}{\the\year/\the\month/\the\day}
+
+\begin{document}
+\pagestyle{empty}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{dos_as=.0.eps}
+    \label{fig:DOS_as=0_T=Tc}
+\end{figure}
+\end{document}
